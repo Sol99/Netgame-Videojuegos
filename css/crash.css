@@ -1,0 +1,128 @@
+body {
+    background-color: #fafafa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/*estilos del nav*/
+.nav-estilos > li{
+    display: inline-block;    /*Alinea los enlaces */
+}
+.nav-estilos > li a{
+    color: rgb(224, 224, 233);
+    padding: 10px;
+    text-decoration: none;   /*Saca el subrrayado*/
+}
+nav{ 
+    background-color: #032333;
+}
+ul li a:hover{
+    background-color: rgb(181, 156, 187);
+}
+.nav-estilos > img {
+    width: 300px;
+}
+/*terminan estilos del nav*/
+
+header > h1{
+    background-color: #16577a;
+    box-shadow: 4px 2px 10px #666;  /*Le agrega sombra*/
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+}
+.img-header{
+    display:block;
+    margin:auto;                      /*Centro imagen */
+}
+.texto-header{
+    background-color: #e1eef5;                      /*Texto debajo de la imagen*/
+    text-align: center;
+    box-shadow: 2px 2px 10px #666;  
+    margin: 0px 10px 0px 10px;
+    
+}
+.foto-main{
+    float: right;
+    margin-top: 6px;
+    
+}
+.videojuego{              /*Imagen de los dos videojuegos*/
+    float: left;
+}
+
+.texto-videojuego{
+    font-weight: bolder;
+    background-color: #16577a;
+    margin: 18px 169px 0px 880px;
+    color: white;
+    border-radius: 5px;  
+    text-align: center;  
+
+}
+.foto-gifcrash{
+    margin-top: 20px;
+    margin-left: 217px;
+}
+.parrafo-crash{
+    background-color: #e1eef5;
+    margin: 0px 476px 0px 5px;
+    box-shadow: 2px 2px 10px #666; 
+    text-align: center;
+
+}
+
+.texto-main{
+        padding: 10px;
+        background-color: #032333;  
+        color: white;    
+        text-align: center;
+        font-weight: 100;
+        box-shadow: 2px 2px 10px #666;
+        margin: 74px 0px 10px 0px;
+        font-size: 1.5em;
+        
+}
+.fotogif-lista > img{
+    margin-left: 95px;
+}
+
+.main-estilos > .iframe-main{
+   display: block;                                 /*Centro el iframe*/
+   margin: 0 auto;
+}
+
+/*Comienzan estilos del footer*/
+
+.logoFooter{
+    position: absolute;
+    z-index: 1;
+}
+
+.contactos{
+    display: flex;
+    justify-content: center;
+}
+div > .contactos{
+    margin-top: 2px;
+    color: white;
+    font-size: 15px;
+    padding-top: 10px;
+    font-weight: bold;
+    
+}
+.iconos{
+    text-align: center;
+    padding: 10px;
+}
+footer > p {
+    color: white;
+    font-size: 10px;
+}
+footer{
+    margin-top: auto;
+    background-color: #032333 ;
+    border-top: 1px solid #042e45;
+}
+/*terminan estilos del footer*/
+

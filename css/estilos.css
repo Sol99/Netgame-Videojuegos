@@ -1,0 +1,338 @@
+body {
+    background-color: #fafafa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/*Comienzan estilos del nav*/
+.nav {
+    background-color: #032333;
+    display: flex;
+    flex-direction: column;
+}
+.nav > img {
+    width: 20em;
+}
+.nav-estilos > li {
+    margin: 0 1em;
+}
+.nav-estilos > li a{
+    color: rgb(224, 224, 233);
+    padding: 0.1em;
+    text-decoration: none;   /*Saca el subrrayado*/
+}
+.nav-estilos > li:hover{
+    transform: scale(1.3);
+    transition: 0.2s;
+
+}
+/*Terminan estilos del nav*/
+
+/* comienzo del footer */
+.contactos{
+    display: flex;
+    justify-content: center;
+}
+div > .contactos{
+    margin-top: 2px;
+    color: white;
+    font-size: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+.iconos{
+    text-align: center;
+    padding: 10px;
+}
+footer > p {
+    color: white;
+    font-size: 10px;
+}
+p{
+    margin-top: 0;
+}
+footer{
+    margin-top: auto;
+    background-color: #032333 ;
+    border-top: 1px solid #042e45;
+}
+
+/*Comienza componente*/
+.carousel{
+   height: 20em;
+}
+.carousel-item > img{
+    height: 20em;
+    object-fit: cover;
+}
+/*Termina componente*/
+
+/* Comienzo de las imagenes*/
+
+h1{
+    text-align: center;
+    background-color: #032333 ;
+    margin: 0px 0px 10px 0px;
+    font-weight: 100;
+    color: white;
+    border: 1px solid #042e45;
+    font-size: 1.5em;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.imagenes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #053a56;
+    border: 2px solid #042e45;
+    margin: 0 0.5em; 
+    box-shadow: 3px 2px 10px #666;
+}
+
+.imagen {
+    margin: 0.5em;
+}
+
+.imagen > img {
+    width: 160px;
+
+}
+
+.imagen img:hover{
+    transform: scale(1.09);       /* aumenta la escala del objeto*/
+    transition-duration: 0.5s;
+}
+
+.gifmovimiento{
+    display: flex;
+    justify-content: center;
+}
+.gifmovimiento > img {
+    width: 200px;
+}
+/* fin de las imagenes */
+/* comienzo de la imagen de mario con parrafo */
+
+.mario,.sonic{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    
+}
+.mario > div {
+    margin-right: auto;
+    margin-left: auto;
+}
+.mario > div > img {
+    width:200px;
+}
+.parrafo{
+    padding: 1em;
+    border: 2px solid #042e45;
+    background-color: #e1eef5;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #666;   /*Agrega sombra*/
+}
+.parrafo p {
+    margin-bottom: 0;
+}
+/* fin de la imagen de mario con parrafo */
+
+/* comienzo de la imagen de sonic con parrafo */
+.sonic > div {
+    margin-right: auto;
+    margin-left: auto;
+}
+.sonic > div > img {
+    width: 200px;
+}
+/* fin de la imagen de sonic con parrafo */
+
+
+h2{
+    background-color: #042e45;
+    font-weight: 100;
+    color: white;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 10px #666;
+
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+.container .card:hover{
+    transform:translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.container .card img{
+    width: 330px;
+}
+@media (min-width:768px) {              /*Por ejemplo para ipad*/
+
+    .imagenes{
+        display:flex;
+        flex-wrap: wrap;
+        background-color: #053a56;
+    }
+    .imagen{
+        margin: 0;
+    }
+    .imagen > img {
+        width: 244px;
+        margin-left: 2px;
+        margin-bottom: 3px;
+    
+    }
+    .container .card {
+        width: 192px;
+    }
+    .container .card img{
+        width: 190px;
+    }
+    .card > p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width:992px) {
+    .nav {
+        flex-direction: row;
+    }
+    .nav-estilos{
+        flex-direction: row;
+    }
+    .carousel{
+        height: 35em;
+     }
+     .carousel-item > img{
+         height: 35em;
+     }
+     .imagen {
+         margin: 0.2em;
+
+     }
+     .imagen > img {
+         width: 240px;
+         margin-left: 2px;
+         margin-bottom: 3px;
+     }
+     .mario{
+         align-items: center;
+        flex-direction: row;   
+    }
+    .mario > div > img {     
+        width: 200px;
+    }
+    .sonic {
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+    .sonic > div > img {
+        width: 200px;
+    }
+    .container .card {
+        width: 270px;
+    }
+    .container .card img{
+        width: 268px;
+    }
+    .card > p {
+        font-size: 18px;
+    }
+}
+@media (min-width:1200px) {
+    .imagenes {
+        margin: 0 3em;
+    }
+     .imagen > img {
+         width: 314px;
+     }
+     .mario{
+         justify-content: center;
+
+     }
+     .parrafo {
+         width: 40%;
+     }
+     .mario > div {
+        margin-right: 0;
+        margin-left: 7em;
+    }
+     .mario > div > img {
+         width: 300px;
+     }
+     .sonic > div {
+        margin-right: 0;
+        margin-left: 7em; 
+     }
+     .sonic > div > img {
+         width: 300px;
+     }
+     .container .card {
+        width: 331px;
+       
+    }
+    .container .card img{
+        width: 330px;
+    }
+    .card > p {
+        font-size: 19px;
+    }
+}
+@media (min-width:1400px) {
+    .container .card {
+        width: 392px;
+       
+    }
+    .container .card img{
+        width: 391px;
+    }
+}
+
+@media (min-width:1900px) {
+
+     .imagen > img {
+         width: 414px;
+     }
+     .container .card {
+        width: 391px;
+    }
+    .container .card img{
+        width: 392px;
+    }
+    .card > p {
+        font-size: 19px;
+    }
+    .gifmovimiento > img {
+        width: 400px;
+    }
+    .imagenes {
+        margin: 0 6em;
+    }
+    .mario > div > img {
+        width: 420px;
+    }
+    .sonic > div > img {
+        width: 345px;
+    }
+
+}
+
+

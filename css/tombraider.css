@@ -1,0 +1,130 @@
+/*estilos del nav*/
+.nav-estilos > li{
+    display: inline-block;    /*Alinea los enlaces */
+}
+.nav-estilos > li a{
+    color: rgb(224, 224, 233);
+    padding: 10px;
+    text-decoration: none;   /*Saca el subrrayado*/
+}
+nav{ 
+    background-color: #032333;
+}
+ul li a:hover{
+    background-color: rgb(181, 156, 187);
+}
+.nav-estilos > img {
+    width: 300px;
+}
+/*Fin de estilos del nav*/
+
+/*estilos del header*/
+.estilo-header > h1{
+    text-align: center;
+    background-color: #16577a;
+    box-shadow: 4px 2px 10px #666;  /*Le agrega sombra*/
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+/*Fin de estilos del header*/
+/*Estilos del main*/
+.img-main{
+    display: block;
+    margin: 0 auto; 
+                /*Centro imagen*/
+}
+
+.estilos-main > .texto-main{
+    background-color: #e1eef5;                      /*Texto debajo de la imagen*/
+    text-align: center;
+    box-shadow: 2px 2px 10px #666;  
+    margin: 0px 10px 0px 10px;
+}
+
+.estilos-main > .lara{
+    float: left;
+}
+
+.lista > .imagen-lara{
+    margin-top: 64px;
+    margin-left: 383px;
+}
+.lista > .texto-lista{
+    font-weight: bolder;
+    background-color: #16577a;
+    margin: 0px 34px 0px 484px;
+    color: white;
+    border-radius: 5px;  
+    text-align: center;  
+}
+
+.subtitulo{
+    padding: 10px;
+    background-color: #032333;  
+    color: white;    
+    text-align: center;
+    font-weight: 100;
+    box-shadow: 2px 2px 10px #666;
+    margin: 193px 0px 10px 0px;
+    font-size: 1.5em;
+}
+
+.lara-foto{
+    float:left;
+    margin-right: 144px;
+}
+
+.parrafo{
+    background-color: #e1eef5;
+    margin: 0px 180px 307px 440px;
+    box-shadow: 0px 2px 10px #666; 
+    text-align: center;
+}
+.logo-juego{
+    margin-top: 62px;
+    margin-left: 40px;
+}
+
+
+.estilos-main > .iframe-main{
+    display: block;                                 /*Centro el iframe*/
+    margin: 0 auto;
+}
+
+/*Comienzan estilos del footer*/
+
+.logoFooter{
+    position: absolute;
+    z-index: 1;
+}
+
+.contactos{
+    display: flex;
+    justify-content: center;
+}
+div > .contactos{
+    margin-top: 2px;
+    color: white;
+    font-size: 15px;
+    padding-top: 10px;
+    font-weight: bold;
+    
+}
+.iconos{
+    text-align: center;
+    padding: 10px;
+}
+footer > p {
+    color: white;
+    font-size: 10px;
+}
+footer{
+    margin-top: auto;
+    background-color: #032333 ;
+    border-top: 1px solid #042e45;
+}
+/*terminan estilos del footer*/
+
+

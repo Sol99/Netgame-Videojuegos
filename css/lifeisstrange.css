@@ -1,0 +1,30 @@
+h1{
+    color: black;
+    text-align: center;
+
+}
+
+.fotoportada{
+    display: flex;
+    justify-content: center;
+}
+
+.maxychloe{
+   text-align: right;
+}
+h2{
+    text-align: center;
+}
+.logo{
+    text-align: center;
+}
+
+.hola{
+    display: flex;
+    justify-content: flex-end;    
+}
+nav a{
+    padding: 10px;
+    color: darkred;
+    border: 1px solid crimson
+}
